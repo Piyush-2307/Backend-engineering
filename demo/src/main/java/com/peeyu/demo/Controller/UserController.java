@@ -1,11 +1,11 @@
-package com.peeyu.demo.Controller;
+package com.peeyu.demo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class controller {
-    @GetMapping()
+public class UserController {
+    @GetMapping("/")
     public String hello(){
         return "Hello";
     }
